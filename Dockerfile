@@ -81,7 +81,7 @@ RUN mkdir -p "${NOTEBOOKS_DIR}/notebooks" && \
 # RUN /opt/install_packages.sh "${PY_REQUIREMENTS}" "${NOTEBOOKS_DIR}"
 
 # Copy notebooks
-COPY ./notebooks "${NOTEBOOKS_DIR}"
+COPY ./notebooks "${NOTEBOOKS_DIR}/notebooks"
 
 WORKDIR /notebooks
 
